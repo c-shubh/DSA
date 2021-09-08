@@ -84,7 +84,7 @@ void printZigzagPattern(int n)
     cout << "\n";
 }
 
-void printZigzagPatternBetterImplementation(int n)
+void printZigzagPatternOptimized(int n)
 {
     for (int i = 1; i <= 3; i++)
     {
@@ -111,7 +111,7 @@ int main()
     cout << "Enter n: ";
     cin >> n;
 
-    printZigzagPatternBetterImplementation(n);
+    printZigzagPatternOptimized(n);
 
     return 0;
 }
