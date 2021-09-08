@@ -11,6 +11,18 @@ int factorialOf(int n)
     return fac;
 }
 
+int factorialRecursive(int n)
+{
+    if (n == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return n * factorialRecursive(n - 1);
+    }
+}
+
 int main()
 {
     cout << "Program to find factorial of a number." << endl
