@@ -61,7 +61,7 @@ int main()
 {
     int t;
     cin >> t;
-    while (t--)
+    for (int tc = 1; tc <= t; tc++)
     {
         int n;
         cin >> n;
@@ -95,7 +95,7 @@ int main()
         {
             mx = count;
         }
-        cout << mx + 1 << endl;
+        cout << "Case #" << tc << ": " << mx + 1 << "\n";
     }
     return 0;
 }
