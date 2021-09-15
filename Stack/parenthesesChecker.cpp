@@ -1,6 +1,7 @@
 #include <iostream>
 #include <typeinfo>
 #include <stack>
+#include <algorithm>
 using namespace std;
 
 bool isParenthesis(char c)
@@ -29,6 +30,7 @@ char getOpeningPair(char c)
 
 bool checkParenthesis(string str)
 {
+    str.erase(remove(str.begin(), str.end(), ' '), str.end());
     stack<char> s;
     for(int i=0; i<str.length(); i++)
     {
